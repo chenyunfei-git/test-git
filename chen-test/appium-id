@@ -24,3 +24,5 @@ driver.find_element_by_id('com.kamitu.drawsth.standalone.free.android:id/di').se
 driver.find_element_by_id('com.kamitu.drawsth.standalone.free.android:id/me').click()  #点击获取验证码
 driver.implicitly_wait(120)  #以秒为单位
 driver.find_element_by_id('com.kamitu.drawsth.standalone.free.android:id/b0').click()  #点击确定
+
+
