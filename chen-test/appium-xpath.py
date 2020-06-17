@@ -39,7 +39,7 @@ driver.find_element_by_xpath("//*[@resource-id='com.tencent.mobileqq:id/bij']").
 driver.implicitly_wait(60)  #以秒为单位
 driver.find_element_by_xpath("//*[@resource-id='com.tencent.mobileqq:id/der']").click()   #添加照片
 driver.implicitly_wait(60)  #以秒为单位
-driver.find_element_by_xpath("//*[@text='拍摄']").click()
+driver.find_element_by_xpath("//*[@text='拍摄']").click()  #点击拍摄文字
 
 
 
