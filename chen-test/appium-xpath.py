@@ -19,7 +19,7 @@ driver.find_element_by_id('com.tencent.mobileqq:id/btn_login').click()  #点击�
 driver.implicitly_wait(60)  #以秒为单位
 driver.find_element_by_class_name("android.widget.TextView").click()
 driver.implicitly_wait(30)  #以秒为单位
-driver.find_element_by_class_name('android.widget.EditText').send_keys("1292394137")  #输入QQ号
+driver.find_element_by_class_name('android.widget.EditText').send_keys("1292394137")  #输入QQ号17159295
 driver.implicitly_wait(15)  #以秒为单位
 driver.find_element_by_id('com.tencent.mobileqq:id/password').send_keys("SJN1020..")  #输入密码
 driver.implicitly_wait(15)  #以秒为单位
@@ -40,6 +40,16 @@ driver.implicitly_wait(60)  #以秒为单位
 driver.find_element_by_xpath("//*[@resource-id='com.tencent.mobileqq:id/der']").click()   #添加照片
 driver.implicitly_wait(60)  #以秒为单位
 driver.find_element_by_xpath("//*[@text='拍摄']").click()  #点击拍摄文字
+
+
+
+
+
+
+
+
+
+
 
 
 
