@@ -19,26 +19,26 @@ class ContactsAndroidTests(unittest.TestCase):
         self.driver = webdriver.Remote('http://127.0.0.1:4723/wd/hub', desired_caps)
 
     def test_chen(self):
-        time.sleep(3)  # 以秒为单位
+        time.sleep(30)  # 以秒为单位
         self.driver.find_element_by_id('com.tencent.mobileqq:id/btn_login').click()  # 点击登录
-        time.sleep(60)  # 以秒为单位
+        time.sleep(30)  # 以秒为单位
         self.driver.find_element_by_class_name("android.widget.TextView").click()
         time.sleep(30)  # 以秒为单位
         self.driver.find_element_by_class_name('android.widget.EditText').send_keys("1292394137")  # 输入QQ号
         self.driver.find_element_by_id('com.tencent.mobileqq:id/password').send_keys("SJN1020..")  # 输入密码
         self.driver.find_element_by_id('com.tencent.mobileqq:id/login').click()  # 点击登录
         self.driver.find_element_by_id('com.tencent.mobileqq:id/dialogRightBtn').click()  # 点击同意
-        time.sleep(60)  # 以秒为单位
+        time.sleep(30)  # 以秒为单位
         self.driver.find_element_by_id('com.tencent.mobileqq:id/login').click()  # 点击登录
-        time.sleep(180)  # 以秒为单位
+        time.sleep(30)  # 以秒为单位
         self.driver.find_element_by_id('com.tencent.mobileqq:id/ba3').click()  # 点击+号
         time.sleep(30)  # 以秒为单位
         self.driver.find_element_by_id('com.tencent.mobileqq:string/adp').click()  # 点击加好友/群
-        time.sleep(60)  # 以秒为单位
+        time.sleep(30)  # 以秒为单位
         self.driver.find_element_by_id('com.tencent.mobileqq:id/bz0').click()  # 点击输入框
-        time.sleep(60)  # 以秒为单位
+        time.sleep(30)  # 以秒为单位
         self.driver.find_element_by_id('com.tencent.mobileqq:id/et_search_keyword').send_keys("1292394137")  # 输入QQ号
-        time.sleep(60)  # 以秒为单位
+        time.sleep(30)  # 以秒为单位
         self.driver.find_element_by_id('com.tencent.mobileqq:id/czn').click()  # 点击找人
 
         self.driver.get_screenshot_as_file('E:\\陈云飞.png')  # 测试截图

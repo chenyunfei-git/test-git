@@ -20,13 +20,13 @@ class ContactsAndroidTests(unittest.TestCase):
         self.driver = webdriver.Remote('http://127.0.0.1:4723/wd/hub', desired_caps)
 
     def test_Demo(self):
-        time.sleep(3)  # 以秒为单位
-        self.driver.find_element_by_id('com.songheng.eastnews:id/rb_bottom_mine').click()  #点击我的
-        time.sleep(3)  # 以秒为单位
-        self.driver.find_element_by_id('com.songheng.eastnews:id/rb_bottom_search').click()  #点击搜索
-        self.driver.find_element_by_id('com.songheng.eastnews:id/edit_search').send_keys("特朗普")  #点击输入框并输入搜索内容
-        self.driver.find_element_by_id('com.songheng.eastnews:id/btn_search').click()  #点击搜索按钮
-        time.sleep(10)  # 以秒为单位
+        time.sleep(3)
+        self.driver.find_element_by_id('com.songheng.eastnews:id/rb_bottom_mine').click()
+        time.sleep(3)
+        self.driver.find_element_by_id('com.songheng.eastnews:id/rb_bottom_search').click()
+        self.driver.find_element_by_id('com.songheng.eastnews:id/edit_search').send_keys("特朗普")
+        self.driver.find_element_by_id('com.songheng.eastnews:id/btn_search').click()
+        time.sleep(10)
         self.driver.get_screenshot_as_file('E:\\陈云飞.png')  # 测试截图
 
 
